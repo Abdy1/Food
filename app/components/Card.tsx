@@ -7,7 +7,7 @@ type CardProps = {
   uploaderImage: string;
   uploaderName: string;
   rating: number;
-  isOpen: boolean; // Open or Closed state
+  isOpen: boolean; 
 };
 
 const Card: React.FC<CardProps> = ({ imageUrl, price, uploaderImage, uploaderName, rating, isOpen }) => {

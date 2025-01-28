@@ -1,0 +1,39 @@
+
+.banner {
+    width: 100%; /* Full width of the viewport */
+    height: 628px; /* Full height */
+    background-color: #FFB30E; /* Orange background color */
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Center content vertically */
+    position: relative;
+    padding-left: 20px; /* Standard left padding to prevent texts from being too far */
+  }
+  
+  .banner-content {
+    text-align: left; /* Align text to the left */
+    z-index: 1; /* Ensures text is above other elements */
+    margin-left: 50px; /* Push text to the left a bit */
+  }
+  
+  .banner-heading {
+    font-size: 64px; /* Large font size for the main heading */
+    color: white; /* White text color */
+    font-weight: bold;
+  }
+  
+  .banner-subheading {
+    font-size: 24px; /* Smaller font size for the subheading */
+    color: white; /* White text color */
+    margin-top: 10px; /* Adds space between the main heading and subheading */
+  }
+  
+  .banner-image {
+    position: absolute;
+    top: 125px; /* Adjusted top position */
+    left:45%; /* Centers the image horizontally */
+    transform: translateX(10%) rotate(0deg); /* Centers and rotates the image */
+    width: 750px; /* Image width */
+    height: 505px; /* Image height */
+    z-index: 0; /* Ensures the image is below the text */
+  }
