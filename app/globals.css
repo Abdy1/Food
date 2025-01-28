@@ -14,8 +14,411 @@
   }
 }
 
+/* global.css */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* White background for the page */
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #0070f3;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  width: 150px; /* Width of the button */
+  height: 42px; /* Height of the button */
+  font-size: 16px; /* Font size for the text */
+  cursor: pointer;
+  border: none;
+  border-radius: 14px; /* Rounded corners with a 14px radius */
+  background: linear-gradient(90deg, #FFBA26 0%, #FF9A0E 100%); /* Linear gradient from yellow to orange */
+  box-shadow: 0 20px 40px 0 rgba(255, 174, 0, 0.29), 0 5px 10px 0 rgba(255, 174, 0, 0.29); /* Shadows with given specifications */
+  color: white; /* White text color */
+  font-weight: bold; /* Bold text for better visibility */
+  text-align: center; /* Center align text inside the button */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #FF9A0E 0%, #FFBA26 100%); /* Reverse gradient on hover */
+  box-shadow: 0 20px 40px 0 rgba(255, 174, 0, 0.3), 0 5px 10px 0 rgba(255, 174, 0, 0.3); /* Slight hover shadow effect */
+}
+
+.button:focus {
+  outline: none; /* Removes the focus outline */
+}
+.banner {
+  width: 100%; /* Full width of the viewport */
+  height: 628px; /* Full height */
+  background-color: #FFB30E; /* Orange background color */
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center; /* Center content vertically */
+  position: relative;
+  padding-left: 20px; /* Standard left padding to prevent texts from being too far */
+}
+
+.banner-content {
+  text-align: left; /* Align text to the left */
+  z-index: 1; /* Ensures text is above other elements */
+  margin-left: 50px; /* Push text to the left a bit */
+}
+
+.banner-heading {
+  font-size: 64px; /* Large font size for the main heading */
+  color: white; /* White text color */
+  font-weight: bold;
+}
+
+.banner-subheading {
+  font-size: 24px; /* Smaller font size for the subheading */
+  color: white; /* White text color */
+  margin-top: 10px; /* Adds space between the main heading and subheading */
+}
+
+.banner-image {
+  position: absolute;
+  top: 125px; /* Adjusted top position */
+  left:45%; /* Centers the image horizontally */
+  transform: translateX(10%) rotate(0deg); /* Centers and rotates the image */
+  width: 750px; /* Image width */
+  height: 505px; /* Image height */
+  z-index: 0; /* Ensures the image is below the text */
+}
+/* global.css */
+
+/* Load More Button Container */
+.load-more-container {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  margin-top: 30px; /* Adds space above the button */
+}
+
+/* Load More Button Styles */
+.load-more-btn {
+  width: 150px;
+  height: 42px;
+  background: linear-gradient(90deg, #FFBA26 0%, #FF9A0E 100%); /* Linear gradient */
+  border-radius: 14px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 20px 40px rgba(255, 174, 0, 0.3), 0px 5px 10px rgba(255, 174, 0, 0.3); /* Shadow */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.load-more-btn:hover {
+  opacity: 0.8; /* Slightly fade the button on hover */
+}
+
+/* global.css */
+
+/* Featured Products Section Styles */
+.featured-products-section {
+  width: 100%; /* Full width of the page */
+  background-color: white; /* White background */
+  padding: 40px 20px; /* Top-bottom padding and some left-right padding */
+  box-sizing: border-box; /* Includes padding in the width and height calculations */
+}
+
+.section-title {
+  font-size: 32px; /* Title font size */
+  font-weight: bold;
+  color: #333; /* Dark color for the text */
+  margin-bottom: 20px; /* Adds space below the title */
+  text-align: center; /* Center the title */
+}
+
+.product-list {
+  display: flex; /* Flexbox to align items horizontally */
+  justify-content: space-around; /* Space out the items evenly */
+  gap: 20px; /* Adds some space between each product card */
+  flex-wrap: wrap; /* Ensures wrapping if the screen is too small */
+}
+
+.product-card {
+  width: 250px; /* Set a fixed width for product cards */
+  height: 300px; /* Set a fixed height for product cards */
+  background-color: #f2f2f2; /* Light gray background for product cards */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px; /* Rounded corners for the cards */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-size: 18px; /* Text size inside cards */
+  color: #333; /* Dark color for the card text */
+  cursor: pointer; /* Change cursor on hover */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Slightly increase the size of the card on hover */
+}
+
+@media (max-width: 768px) {
+  .product-list {
+    justify-content: center; /* Center the product cards on smaller screens */
+  }
+
+  .product-card {
+    width: 200px; /* Adjust the width on smaller screens */
+    height: 250px; /* Adjust the height on smaller screens */
+  }
+}
+
+
+.card {
+  width: 357px; /* Set card width */
+  background-color: white; /* Background color for the card */
+  border-radius: 16px; /* Rounded corners for the entire card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for a 3D effect */
+  overflow: hidden; /* Ensures no content overflows the rounded corners */
+  margin: 20px; /* Spacing between each card */
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container {
+  position: relative;
+}
+
+.product-image {
+  width: 100%;
+  height: 301px; /* Image height */
+  border-top-left-radius: 16px; /* Rounded top-left corners */
+  border-top-right-radius: 16px; /* Rounded top-right corners */
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+.price-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #F17228; /* Price tag background color */
+  width: 114px;
+  height: 42px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.uploader-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%; /* Circular profile picture */
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fits the container */
+}
+
+.uploader-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.star {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.rating-number {
+  font-size: 16px;
+  color: #FFBA26; /* Gold color for the rating number */
+}
+
+.status-button {
+  width: 97px;
+  height: 42px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.status-button.open {
+  background-color: #79B93C33; /* Open Now color */
+}
+
+.status-button.closed {
+  background-color: #F1722833; /* Closed color */
+  opacity: 0.2; /* Make it semi-transparent when closed */
+}
+
+.status-button:hover {
+  opacity: 0.8; /* Slight hover effect */
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Footer sections (Company, Contact, Legal, Follow Us) */
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Follow Us Section */
+.follow-us .social-icons {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.follow-us .social-icons img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.follow-us p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.subscribe {
+  display: flex;
+  gap: 10px;
+}
+
+.subscribe input {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+}
+
+.subscribe-btn {
+  width: 120px;
+  padding: 10px;
+  font-size: 16px;
+  background: linear-gradient(90deg, #FFBA26 0%, #FF9A0E 100%);
+  border-radius: 14px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 20px 40px rgba(255, 174, 0, 0.3), 0px 5px 10px rgba(255, 174, 0, 0.3);
+  transition: opacity 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  opacity: 0.8;
+}
+
+/* Footer Line */
+.footer-line {
+  width: 80%;
+  height: 2px;
+  background-color: #9E7B5A; /* Brownish color */
+  margin: 20px 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #A3A3A3;
+}
+
+.footer-bottom p {
+  margin: 0;
 }
