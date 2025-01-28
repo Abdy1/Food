@@ -423,7 +423,6 @@ body {
   margin: 0;
 }
 
-/* global.css or any other global stylesheet */
 
 /* Modal overlay */
 .modal-overlay {
@@ -502,3 +501,5 @@ input, select {
   border: 1px solid #FF9A0E;
   color: #FF9A0E;
 }
+
+

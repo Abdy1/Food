@@ -1,5 +1,6 @@
 // components/Modal.tsx
 import { useState } from 'react';
+import styles from '../styles/Modal.module.css';
 
 export default function Modal({ isOpen, closeModal }: { isOpen: boolean, closeModal: () => void }) {
   const [formData, setFormData] = useState({

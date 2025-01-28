@@ -1,0 +1,124 @@
+
+/* Footer sections (Company, Contact, Legal, Follow Us) */
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer-section h4 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  /* Follow Us Section */
+  .follow-us .social-icons {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+  }
+  
+  .follow-us .social-icons img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+  }
+  
+  .follow-us p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .subscribe {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .subscribe input {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+  }
+  
+  .subscribe-btn {
+    width: 120px;
+    padding: 10px;
+    font-size: 16px;
+    background: linear-gradient(90deg, #FFBA26 0%, #FF9A0E 100%);
+    border-radius: 14px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 20px 40px rgba(255, 174, 0, 0.3), 0px 5px 10px rgba(255, 174, 0, 0.3);
+    transition: opacity 0.3s ease;
+  }
+  
+  .subscribe-btn:hover {
+    opacity: 0.8;
+  }
+  
+  /* Footer Line */
+  .footer-line {
+    width: 80%;
+    height: 2px;
+    background-color: #9E7B5A; /* Brownish color */
+    margin: 20px 0;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #A3A3A3;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  
+  /* Modal overlay */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  

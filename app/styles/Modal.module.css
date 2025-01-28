@@ -1,0 +1,110 @@
+/* Modal overlay to cover the whole screen */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal content box */
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 80%; /* Make the modal fill the entire screen */
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Close button */
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  /* Form fields and input styling */
+  .input-field {
+    width: 80%;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #F5F5F5;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #F17228; /* Border color on focus */
+  }
+  
+  /* Error text styling */
+  .error-text {
+    color: #F17228;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Buttons section */
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .save-btn,
+  .cancel-btn {
+    width: 48%;
+    padding: 10px;
+    border-radius: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Save button */
+  .save-btn {
+    background: linear-gradient(90deg, #FFBA26 0%, #FF9A0E 100%);
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .save-btn:hover {
+    background: linear-gradient(90deg, #FF9A0E 0%, #FFBA26 100%);
+  }
+  
+  /* Cancel button */
+  .cancel-btn {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #F5F5F5;
+  }
+  
+  /* Modal heading */
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  
